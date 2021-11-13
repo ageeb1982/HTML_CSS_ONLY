@@ -1,0 +1,164 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Rakkas', 'cursive';
+    font-weight: bold;
+    font-size: x-large;
+    text-shadow: 1px 1px black,
+        -1px -1px black;
+}
+
+body {
+    background-color: rgb(131, 78, 78);
+}
+
+header {
+    line-height: 100px;
+
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(131, 78, 78), rgb(204, 141, 141));
+    background-color: blue;
+    color: yellow;
+}
+
+header a {
+    color: white;
+}
+
+hr {
+    border: 3px double white;
+}
+
+#MainDiv {
+    /* display: inline-block; */
+    background-color: blueviolet;
+    color: white;
+}
+
+aside {
+    background-color: darkorange;
+    color: black;
+}
+
+main {
+    background-color: brown;
+    color: yellow;
+
+}
+
+footer {
+    background-color: black;
+    color: yellow;
+}
+
+nav {
+    float: right;
+    width: 75%;
+    background-image: linear-gradient(to right, rgb(131, 78, 78), rgb(204, 141, 141));
+    text-align: center;
+
+}
+
+nav a {
+
+    display: inline-block !important;
+    text-decoration-line: none;
+    width: 100%;
+    color: yellow;
+
+}
+
+nav a:hover {
+    background-color: yellow;
+    color: rgb(207, 78, 78);
+    animation-name: textMove;
+    animation-duration: 3s;
+}
+
+@keyframes textMove {
+
+
+
+
+    50% {
+        width: 125%;
+
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+#logoX {
+    float: left;
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(to left, rgb(131, 78, 78), rgb(230, 211, 211));
+}
+
+
+
+#logoX span {
+    margin-left: 10px;
+}
+
+#logoX img {
+    border-radius: 50%;
+    width: 90px;
+    border: 2px groove white;
+    box-shadow: 3px 3px black;
+}
+
+#logoX img:hover {
+    animation-name: logoMove;
+    animation-duration: 4s;
+}
+
+@keyframes logoMove {
+    0% {
+        width: 25%;
+    }
+
+    25% {
+        width: 35%;
+    }
+
+    50% {
+        width: 20%;
+
+    }
+
+    100% {
+        width: 25;
+    }
+}
+
+aside img {
+    width: 40%;
+}
+
+aside img:hover {
+    width: 50%;
+    transition-duration: 2s;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: auto
+}
+
+nav li {
+    line-height: 100px;
+
+    display: inline-block;
+    /* margin: 10px; */
+    width: 33% !important;
+}
+
+span {}
