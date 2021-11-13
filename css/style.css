@@ -30,20 +30,37 @@ hr {
 }
 
 #MainDiv {
-    /* display: inline-block; */
-    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    background-color: rgb(88, 32, 32);
     color: white;
 }
 
 aside {
-    background-color: darkorange;
+    background-color: #c48b8b;
     color: black;
 }
 
 main {
+    width: 100%;
+    text-align: center;
+    /* float: left; */
     background-color: brown;
     color: yellow;
 
+}
+
+#myInfo {
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: rgb(239 180 180 / 72%);
+    width: 30%;
+}
+
+#myInfo h1 {
+    border-bottom: 2px solid blue;
+    border-style: 1px;
 }
 
 footer {
@@ -69,8 +86,9 @@ nav a {
 }
 
 nav a:hover {
-    background-color: yellow;
-    color: rgb(207, 78, 78);
+    /* background-color: rgb(229, 229, 149); */
+    background-color: #461515d1;
+    /* color: rgb(235, 139, 139); */
     animation-name: textMove;
     animation-duration: 3s;
 }
@@ -113,6 +131,7 @@ nav a:hover {
 }
 
 #logoX img:hover {
+    overflow: hidden;
     animation-name: logoMove;
     animation-duration: 4s;
 }
@@ -123,7 +142,7 @@ nav a:hover {
     }
 
     25% {
-        width: 35%;
+        width: 28%;
     }
 
     50% {
@@ -136,12 +155,12 @@ nav a:hover {
     }
 }
 
-aside img {
-    width: 40%;
+#javaImg {
+    width: 95%;
 }
 
-aside img:hover {
-    width: 50%;
+#javaImg:hover {
+    width: 100%;
     transition-duration: 2s;
 }
 
@@ -161,4 +180,49 @@ nav li {
     width: 33% !important;
 }
 
-span {}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mySocial {
+    margin: 10px;
+    width: 40px;
+}
+
+.mySocial:hover {
+    width: 50px;
+    transition-duration: 2s;
+}
+
+.couresLink {
+    width: 30%;
+    /* margin: 1%; */
+    /* background-color: white; */
+
+
+}
+
+.couresImg {
+    width: 100%;
+    border: 2px solid rgb(243, 87, 87);
+    border-radius: 10%;
+    margin: 20px;
+    filter: opacity(50%) grayscale();
+
+    /* transition-delay: 2s; */
+}
+
+.couresImg:hover {
+    filter: opacity(100%);
+    width: 105%;
+    transition-duration: 1s;
+
+}
+
+.crs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
