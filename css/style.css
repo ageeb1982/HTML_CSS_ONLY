@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(131, 78, 78);
+    background-color: rgb(243, 179, 179);
     min-width: 400px;
 }
 
@@ -247,7 +247,7 @@ nav li {
 
 /* تجهيز مقاسات الشاشات*/
 
-@media (max-width:1259px) {
+@media only screen and (max-width:1259px) {
 
     #logoImg {
         width: 50px;
@@ -261,7 +261,7 @@ nav li {
 
 }
 
-@media (max-width:855px) {
+@media only screen and (max-width:855px) {
     header {
         line-height: 50px;
         /* display: flex; */
@@ -303,7 +303,7 @@ nav li {
 
 }
 
-@media (max-width:552px) {
+@media only screen and (max-width:552px) {
     nav ul {
         align-items: center;
         flex-direction: column;
