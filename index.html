@@ -17,11 +17,27 @@
 </head>
 
 <body>
+    <script>
+
+
+        function resize() {
+            const heightOutput = document.querySelector('#height');
+            const widthOutput = document.querySelector('#width');
+            heightOutput.textContent = window.innerHeight;
+            widthOutput.textContent = window.innerWidth;
+        }
+
+        window.onresize = resize;
+    </script>
+    <div style="color:white;text-align: left;">
+        <p> Width <span id="width">0</span></p>
+        <p> Height <span id="height">0</span></p>
+    </div>
     <header>
         <a id="logoLink" target="_blank" href="https://github.com/ageeb1982">
             <div id="logoX">
-                <span>MOHAMED AGEEB</span>
-                <img src="/img/logo.jpg" alt="">
+                <img id="logoImg" src="/img/myLogo.png" alt="">
+                <span id="logoTxt">MOHAMED AGEEB</span>
 
             </div>
         </a>
@@ -37,26 +53,6 @@
     </header>
     <hr>
     <main id="MainDiv">
-        <aside>
-            <a href="https://www.youtube.com/playlist?list=PLMTdZ61eBnyp1nMM8mGRzpwuu6FNxFy0D">
-                <img id="javaImg" src="img/javaScript.png" alt="دورة جافا اسكريبت">
-            </a>
-            <hr>
-            <div class="social">
-                <a target="_blank" href="https://www.youtube.com/channel/UCB3q-A8GA4yxRwlgVXfJxUg"><img class="mySocial"
-                        src="img/youtube.png" alt="youtube"></a>
-                <a target="_blank" href="https://twitter.com/ageeb1982"><img class="mySocial" src="img/twitter.png"
-                        alt="twitter"></a>
-                <a target="_blank" href="https://github.com/ageeb1982"><img class="mySocial" src="img/github.png"
-                        alt="github"></a>
-                <a target="_blank" href="https://ageebsoft.blogspot.com/"><img class="mySocial" src="img/chrome.png"
-                        alt="chrome"></a>
-                <a target="_blank" href="https://www.facebook.com/ageebSoft"><img class="mySocial"
-                        src="img/facebook.png" alt="facebook"></a>
-
-
-            </div>
-        </aside>
         <article id="myInfo">
             <h1>Asp Developer</h1>
             <iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no"
@@ -65,6 +61,28 @@
                 src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channelid=UCB3q-A8GA4yxRwlgVXfJxUg&amp;layout=full&amp;count=default&amp;origin=http%3A%2F%2Fshiyarjemo.com&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.ar.lgnovHuaops.O%2Fam%3DAQ%2Fd%3D1%2Frs%3DAGLTcCNafkSSSbOaLNo31KAQNo8wih0KdQ%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1636626313579&amp;_gfid=I0_1636626313579&amp;parent=http%3A%2F%2Fshiyarjemo.com&amp;pfname=&amp;rpctoken=18105102"
                 data-gapiattached="true"></iframe>
         </article>
+        <aside>
+            <a href="https://www.youtube.com/playlist?list=PLMTdZ61eBnyp1nMM8mGRzpwuu6FNxFy0D">
+                <img id="javaImg" src="img/javaScript.png" alt="دورة جافا اسكريبت">
+            </a>
+            <br><br>
+            <hr id="myHr">
+            <div class="social">
+                <a class="socialLink" target="_blank" href="https://www.youtube.com/channel/UCB3q-A8GA4yxRwlgVXfJxUg">
+                    <img class="mySocial" src="img/youtube.png" alt="youtube"></a>
+                <a class="socialLink" target="_blank" href="https://twitter.com/ageeb1982"><img class="mySocial"
+                        src="img/twitter.png" alt="twitter"></a>
+                <a class="socialLink" target="_blank" href="https://github.com/ageeb1982"><img class="mySocial"
+                        src="img/github.png" alt="github"></a>
+                <a class="socialLink" target="_blank" href="https://ageebsoft.blogspot.com/"><img class="mySocial"
+                        src="img/chrome.png" alt="chrome"></a>
+                <a class="socialLink" target="_blank" href="https://www.facebook.com/ageebSoft"><img class="mySocial"
+                        src="img/facebook.png" alt="facebook"></a>
+
+
+            </div>
+        </aside>
+
     </main>
     <div class="MainCourse">
         <article id="Coures1" class="crs">

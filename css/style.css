@@ -10,6 +10,7 @@
 
 body {
     background-color: rgb(131, 78, 78);
+    min-width: 400px;
 }
 
 header {
@@ -27,6 +28,7 @@ header a {
 
 hr {
     border: 3px double white;
+    margin-bottom: 10px;
 }
 
 #MainDiv {
@@ -34,11 +36,14 @@ hr {
     align-items: center;
     background-color: rgb(88, 32, 32);
     color: white;
+    /* height: 80%; */
 }
 
 aside {
+    padding-top: 15px;
     background-color: #c48b8b;
     color: black;
+    height: 500;
 }
 
 main {
@@ -56,6 +61,7 @@ main {
     border: 2px solid black;
     background-color: rgb(239 180 180 / 72%);
     width: 30%;
+    min-width: 200px;
 }
 
 #myInfo h1 {
@@ -99,7 +105,7 @@ nav a:hover {
 
 
     50% {
-        width: 125%;
+        width: 110%;
 
     }
 
@@ -120,17 +126,18 @@ nav a:hover {
 
 
 #logoX span {
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
-#logoX img {
+#logoImg {
     border-radius: 50%;
     width: 90px;
     border: 2px groove white;
     box-shadow: 3px 3px black;
 }
 
-#logoX img:hover {
+#logoImg:hover {
     overflow: hidden;
     animation-name: logoMove;
     animation-duration: 4s;
@@ -156,11 +163,11 @@ nav a:hover {
 }
 
 #javaImg {
-    width: 95%;
+    width: 90%;
 }
 
 #javaImg:hover {
-    width: 100%;
+    width: 97%;
     transition-duration: 2s;
 }
 
@@ -186,9 +193,19 @@ nav li {
     justify-content: space-evenly;
 }
 
+.socialLink {
+    border-bottom: 2px solid rgb(88, 32, 32);
+    border-radius: 15%;
+    margin-bottom: 15px;
+}
+
 .mySocial {
     margin: 10px;
     width: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 7px;
+
 }
 
 .mySocial:hover {
@@ -225,4 +242,81 @@ nav li {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+
+/* تجهيز مقاسات الشاشات*/
+
+@media (max-width:1259px) {
+
+    #logoImg {
+        width: 50px;
+    }
+
+    #logoTxt {
+        font-size: 70%;
+        transition-duration: 2px;
+    }
+
+
+}
+
+@media (max-width:855px) {
+    header {
+        line-height: 50px;
+        /* display: flex; */
+        /* align-items: center; */
+    }
+
+    #logoX,
+    nav {
+
+        padding-top: 10px;
+        flex-direction: column;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #logoX {
+        width: 40%;
+    }
+
+    nav {
+        width: 100%;
+    }
+}
+
+@media (max-width:830px) {
+
+    #MainDiv {
+        flex-direction: column;
+    }
+
+
+
+    #myInfo,
+    aside {
+        margin: 20px;
+
+    }
+
+}
+
+@media (max-width:552px) {
+    nav ul {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li {
+        line-height: 32px;
+        margin: 10px;
+        width: 100% !important;
+    }
+
+    nav a {
+        width: 100%;
+    }
 }
